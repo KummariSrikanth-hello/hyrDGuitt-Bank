@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Loan Application</title>
+<link rel="stylesheet" href="prodstyle.css">
+</head>
+<body>
+
+  <header>
+     <div class="left-controls">
+      <a href="bank.html" class="back-button">←</a>
+       <h1>Apply for a Loan</h1>
+      </div>
+    
+  </header>
+
+  <div class="container">
+    <div class="info">
+    <h2>About Our Loans</h2>
+    <p>
+      We offer a range of loan options to meet your financial needs — from personal and home loans to auto loans and business financing.
+      Enjoy quick approvals, flexible tenures, and competitive interest rates. Whether you're planning a wedding, buying a home,
+      or expanding your business, we've got you covered.
+    </p>
+</div>
+
+    <div class="info">
+    <h2>Features of Our Loans</h2>
+    <ul>
+      <li>Wide range of loans: personal, home, car, education, business</li>
+      <li>Flexible repayment tenure up to 20 years (depending on loan type)</li>
+      <li>Attractive and competitive interest rates</li>
+      <li>Quick processing and minimal documentation</li>
+      <li>Pre-approved loans for eligible customers</li>
+      <li>Easy part-prepayment and foreclosure options</li>
+    </ul>
+</div>
+
+    <div class="info">
+    <h2>Advantages of Our Loans</h2>
+    <ul>
+      <li>Tailored solutions for your specific needs</li>
+      <li>Transparent process with no hidden charges</li>
+      <li>Online application and tracking</li>
+      <li>Dedicated loan advisor support</li>
+      <li>Special schemes for women and senior citizens</li>
+    </ul>
+</div>
+
+    <div class="info">
+    <h2>Documents Required</h2>
+    <ul>
+      <li>PAN Card</li>
+      <li>Aadhaar Card / Passport / Voter ID</li>
+      <li>Income proof (salary slips / ITR / bank statement)</li>
+      <li>Address proof</li>
+      <li>Photograph</li>
+    </ul>
+    </div>
+
+<div class="info">
+    <h2>Terms & Conditions (Highlights)</h2>
+    <ul>
+      <li>Interest rates based on eligibility and loan type</li>
+      <li>Processing fee may apply</li>
+      <li>Late EMI payments attract penalty charges</li>
+      <li>Prepayment/foreclosure terms as per loan agreement</li>
+    </ul>
+</div>
+
+    <h2>Loan Application Form</h2>
+    <form>
+      <label for="fullName">Full Name</label>
+      <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required />
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required />
+
+      <label for="loanType">Loan Type</label>
+      <select id="loanType" name="loanType" required>
+        <option value="">Select loan type</option>
+        <option value="personal">Personal Loan</option>
+        <option value="home">Home Loan</option>
+        <option value="auto">Car Loan</option>
+        <option value="education">Education Loan</option>
+        <option value="business">Business Loan</option>
+      </select>
+
+      <label for="loanAmount">Loan Amount (₹)</label>
+      <input type="number" id="loanAmount" name="loanAmount" placeholder="Enter desired loan amount" required />
+
+      <label for="tenure">Tenure (Years)</label>
+      <input type="number" id="tenure" name="tenure" placeholder="Enter tenure in years" required />
+
+      <button type="submit">Submit Application</button>
+    </form>
+  </div>
+
+</body>
+</html>

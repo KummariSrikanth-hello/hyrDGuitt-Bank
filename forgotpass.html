@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bank Forgot Password</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f4f8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .container {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      max-width: 400px;
+      width: 100%;
+    }
+    .container h2 {
+      text-align: center;
+      color: #002d62;
+      margin-bottom: 1rem;
+    }
+    .form-group {
+      margin-bottom: 1rem;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+      color: #333;
+    }
+    .form-group input {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .btn {
+      width: 100%;
+      padding: 0.75rem;
+      background: #002d62;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background: #004aad;
+    }
+    .links {
+      margin-top: 1rem;
+      text-align: center;
+    }
+    .links a {
+      color: #002d62;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+    .links a:hover {
+      text-decoration: underline;
+    }
+    .hidden {
+      display: none;
+    }
+    .resend {
+      font-size: 0.9rem;
+      color: #004aad;
+      cursor: pointer;
+      margin-top: 0.5rem;
+      text-align: right;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Forgot Password</h2>
+    <form id="forgotForm" onsubmit="return false;">
+      <div class="form-group" id="mobile-group">
+        <label for="mobile">Registered Mobile Number</label>
+        <input type="text" id="mobile" name="mobile" placeholder="Enter your mobile number" required />
+      </div>
+
+      <div class="form-group hidden" id="otp-group">
+        <label for="otp">Verification Code (OTP)</label>
+        <input type="text" id="otp" name="otp" placeholder="Enter OTP" required />
+        <div class="resend" onclick="resendOTP()">Resend OTP</div>
+      </div>
+
+      <div class="form-group hidden" id="account-group">
+        <label for="account">Account Number</label>
+        <input type="text" id="account" name="account" placeholder="Enter your account number" required />
+      </div>
+
+      <button type="button" class="btn" onclick="nextStep()">Next</button>
+    </form>
+
+    <div class="links">
+      <a href="login.html">Back to Login</a> | 
+      <a href="register.html">New User? Register</a>
+    </div>
+  </div>
+
+  <script>
+    let step = 1;
+
+    function nextStep() {
+      if(step === 1) {
+        const mobile = document.getElementById('mobile').value.trim();
+        if(mobile === "" || mobile.length !== 10 || isNaN(mobile)) {
+          alert("Please enter a valid 10-digit mobile number.");
+          return;
+        }
+        document.getElementById('otp-group').classList.remove('hidden');
+        step++;
+        alert("OTP sent to your mobile number.");
+      }
+      else if(step === 2) {
+        const otp = document.getElementById('otp').value.trim();
+        if(otp === "" || otp.length < 4) {
+          alert("Please enter a valid OTP.");
+          return;
+        }
+        document.getElementById('account-group').classList.remove('hidden');
+        step++;
+      }
+      else if(step === 3) {
+        const account = document.getElementById('account').value.trim();
+        if(account === "" || account.length < 6) {
+          alert("Please enter a valid account number.");
+          return;
+        }
+        alert("Password reset instructions sent to your registered contact details.");
+        // Here you'd normally submit the form to server
+        // document.getElementById('forgotForm').submit();
+      }
+    }
+
+    function resendOTP() {
+      alert("A new OTP has been sent to your mobile number.");
+    }
+  </script>
+</body>
+</html>

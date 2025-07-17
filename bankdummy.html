@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Banking Made Easy</title>
+  <link rel="stylesheet" href="styledummy.css" />
+</head>
+<body>
+  <header>
+    <div class="logo"> hyrDGuitt BANK</div>
+    <nav>
+      <a href="openaccount.html" >Open Account</a>
+      <a href="bankinglogin.html">Internet Banking Login</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Banking Made Easy</h1>
+      <p>Simple and secure banking solutions for your needs</p>
+      
+    </div>
+  </section>
+
+  <div id="slideshow">
+  <a href="openaccount.html">
+    <div class="slide active">
+      <h1>Open Account</h1>
+      <img src="openacc2.jpeg" alt="Open Account">
+    </div>
+  </a>
+  <a href="insurance.html">
+    <div class="slide">
+      <h1>Insurance</h1>
+      <img src="insurance.jpeg" alt="Insurance">
+    </div>
+  </a>
+  <a href="invest.html">
+    <div class="slide">
+      <h1> SIP Invest</h1>
+      <img src="invest.jpeg" alt="Invest">
+    </div>
+  </a>
+  <a href="homeloan.html">
+    <div class="slide">
+      <h1>Home Loan</h1>
+      <img src="homeloan.jpeg" alt="Home Loan">
+    </div>
+  </a>
+  <a href="credit.html">
+    <div class="slide">
+      <h1>Credit Card</h1>
+      <img src="applycre1.jpeg" alt="Credit Card">
+    </div>
+  </a>
+  <a href="goldloan.html">
+    <div class="slide">
+      <h1>Gold Loan</h1>
+      <img src="goldloan1.jpeg" alt="Gold Loan">
+    </div>
+  </a>
+  <a href="car.html">
+    <div class="slide">
+      <h1>Car Loan</h1>
+      <img src="car.jpeg" alt="Car Loan">
+    </div>
+  </a>
+  <a href="loans.html">
+    <div class="slide">
+      <h1>Loans</h1>
+      <img src="loans.jpeg" alt="Other Loans">
+    </div>
+  </a>
+</div>
+
+
+  <main class="sections">
+       
+    <div class="section">
+        <h1>Services</h1>
+        <a href="savings.html"><img src="savings.jpeg" alt="Savings Accounts"><h3 class="acc-type">Savings Accounts</h3></a>
+        <a href="currentacc.html"><img src="current.jpeg" alt="Current Accounts"><h3 class="acc-type">Current Accounts</h3></a>
+        <a href="fixed.html"><img src="fixed.jpeg" alt="Fixed Deposits"><h3 class="acc-type">Fixed Deposits</h3></a>
+         <a href="credit.html"><img src="credit.jpeg" alt="Credit Cards"><h3 class="acc-type">Credit Cards</h3></a>
+        <a href="loans.html"><img src="loans.jpeg" alt="Loans"><h3 class="acc-type">Loans</h3></a>
+        <a href="insurance.html"><img src="insurance.jpeg" alt="Insurance"><h3 class="acc-type">Insurance</h3></a>
+    </div><br>
+
+    <div class="section1">
+      <h1>Internet Banking</h1>
+
+      <a href="banklogin.html"><img src="online.jpeg" alt="Personal"><h3 class="acc-type">Personal Banking Login</h3></a>
+        <a href="corporate.html"><img src="corporate.jpeg" alt="Corporate"><h3 class="acc-type">Corporate Banking Login</h3></a>
+        <a href="feature.html"><img src="feature.jpeg" alt="Features"><h3 class="acc-type">Features</h3></a>
+         <a href="fund.html"><img src="transfer.jpeg" alt="Fund"><h3 class="acc-type">Fund Transfer</h3></a>
+        <a href="bill.html"><img src="bill.jpeg" alt="Bill"><h3 class="acc-type">Bill Payment</h3></a>
+        <a href="statement.html"><img src="statement.jpeg" alt="Mini Statement"><h3 class="acc-type">Mini Statement</h3></a>
+      
+    </div>
+
+    <div class="section2">
+      <h1>About Us</h1>
+
+      <a href="mission.html"><img src="mission.jpeg" alt="Bank’s mission & vision"><h3 class="acc-type">Bank’s mission & vision</h3></a>
+        <a href="edi4  "><img src="history.jpeg" alt="History / Milestones"><h3 class="acc-type">History / Milestones</h3></a>
+        <a href="#"><img src="board.jpeg" alt="Leadership / Board of Directors"><h3 class="acc-type">Leadership / Board of Directors</h3></a>
+         <a href="#"><img src="awards.jpeg" alt="Awards & Recognition"><h3 class="acc-type">Awards & Recognition</h3></a>
+        
+    </div>
+
+
+  </main>
+
+
+
+  <footer>
+  <p>&copy; 2025 BANK. All rights reserved.</p>
+  
+        <div class="section3">
+      <h2>Contact</h2>
+          <ul>
+        <li><strong>Location:</strong> Flat-NO:5-9/15, Hyderabad, Telangana State, India</li>
+        <li>📧 <strong>Email:</strong> support@hyrDGuittbank.com</li>
+        <li>🏦 <strong>Visit:</strong> Hyderabad, Warangal, Vizag, Guntur, Bengaluru, Mumbai, Pune</li>
+      </ul>
+    </div>
+
+
+  
+  </footer>
+
+  
+<script>
+  const slides = document.querySelectorAll('#slideshow .slide');
+  let current = 0;
+
+  function showNextSlide() {
+    slides[current].classList.remove('active');
+    current = (current + 1) % slides.length;
+    slides[current].classList.add('active');
+  }
+
+  setInterval(showNextSlide, 5000); // 5 seconds
+</script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Credit Card Application</title>
+  <link rel="stylesheet" href="prodstyle.css">
+</head>
+<body>
+
+  <header>
+     <div class="left-controls">
+      <a href="bank.html" class="back-button">←</a>
+      <h1>Apply for a Credit Card</h1>
+      </div>
+    
+  </header>
+
+  <div class="container">
+    <img src="credit.jpeg" alt="Credit Card Banner" class="section-image" />
+
+ <div class="info">
+    <h2>About Our Credit Cards</h2>
+    <p>
+      Our credit cards offer you the freedom to spend smartly, earn rewards, and manage your finances conveniently.
+      Choose from a range of cards that suit your lifestyle — from shopping and travel to premium and business needs.
+    </p>
+</div>
+   
+ <div class="info">
+    <h2>Features of Our Credit Cards</h2>
+    <ul>
+      <li>Wide range of cards: Classic, Gold, Platinum, and Premium</li>
+      <li>Attractive reward points on every spend</li>
+      <li>Cashback offers and discounts at partner stores</li>
+      <li>EMI conversion on big purchases</li>
+      <li>Contactless payment feature</li>
+      <li>Secure online and international transactions</li>
+      <li>Fuel surcharge waiver and airport lounge access (on select cards)</li>
+    </ul>
+    </div>
+
+     <div class="info">
+    <h2>Advantages of Our Credit Cards</h2>
+    <ul>
+      <li>Up to 50 days interest-free credit period</li>
+      <li>Easy bill payments and utility payments</li>
+      <li>Track expenses with online statements</li>
+      <li>Lost card liability cover</li>
+      <li>Special privileges for premium customers</li>
+    </ul>
+</div>
+
+    <div class="info">
+    <h2>Documents Required</h2>
+    <ul>
+      <li>PAN Card</li>
+      <li>Aadhaar Card / Passport / Voter ID</li>
+      <li>Latest salary slip / ITR / bank statement (for income proof)</li>
+      <li>Address proof</li>
+      <li>Passport size photograph</li>
+    </ul>
+    </div>
+
+ <div class="info">
+    <h2>Terms & Conditions (Highlights)</h2>
+    <ul>
+      <li>Annual fee applicable as per card type</li>
+      <li>Late payment charges apply if dues are not cleared on time</li>
+      <li>Credit limit decided based on eligibility and bank policy</li>
+    </ul>
+ </div>
+    <h2>Credit Card Application Form</h2>
+    <form>
+      <label for="fullName">Full Name</label>
+      <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required />
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required />
+
+      <label for="income">Annual Income (₹)</label>
+      <input type="number" id="income" name="income" placeholder="Enter your annual income" required />
+
+      <label for="cardType">Card Type</label>
+      <select id="cardType" name="cardType" required>
+        <option value="">Select card type</option>
+        <option value="classic">Classic</option>
+        <option value="gold">Gold</option>
+        <option value="platinum">Platinum</option>
+        <option value="premium">Premium</option>
+      </select>
+
+      <button type="submit">Submit Application</button>
+    </form>
+  </div>
+
+</body>
+</html>

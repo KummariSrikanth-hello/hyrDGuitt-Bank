@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Insurance Application</title>
+<link rel="stylesheet" href="prodstyle.css">
+</head>
+<body>
+
+  <header>
+     <div class="left-controls">
+      <a href="bank.html" class="back-button">←</a>
+        <h1>Apply for Insurance</h1>
+      </div>
+   
+  </header>
+
+  <div class="container">
+    <div class="info">
+    <h2>About Our Insurance Plans</h2>
+    <p>
+      Protect yourself and your loved ones with our comprehensive insurance solutions. We offer life insurance, health insurance, motor insurance, and more — ensuring peace of mind for every stage of life.
+    </p>
+</div>
+
+    <div class="info">
+    <h2>Features of Our Insurance Plans</h2>
+    <ul>
+      <li>Wide choice: life, health, motor, travel, and home insurance</li>
+      <li>Affordable premiums with flexible payment options</li>
+      <li>Quick claim settlement process</li>
+      <li>Tax benefits under section 80C / 80D (as applicable)</li>
+      <li>24x7 customer support for claims and queries</li>
+    </ul>
+    </div>
+
+<div class="info">
+    <h2>Advantages of Our Insurance</h2>
+    <ul>
+      <li>Comprehensive coverage tailored to your needs</li>
+      <li>Cashless hospitalization at network hospitals (for health insurance)</li>
+      <li>No-claim bonus and loyalty benefits</li>
+      <li>Online policy management and renewals</li>
+      <li>Dedicated claim assistance</li>
+    </ul>
+    </div>
+
+   <div class="info">
+    <h2>Documents Required</h2>
+    <ul>
+      <li>Identity proof (PAN / Aadhaar / Passport / Voter ID)</li>
+      <li>Address proof</li>
+      <li>Income proof (for life insurance / high sum assured policies)</li>
+      <li>Photograph</li>
+      <li>Vehicle documents (for motor insurance)</li>
+    </ul>
+    </div>
+
+<div class="info">
+    <h2>Terms & Conditions (Highlights)</h2>
+    <ul>
+      <li>Policy terms, conditions, and exclusions apply as per plan</li>
+      <li>Premium varies based on age, sum insured, and plan type</li>
+      <li>Free-look period of 15 days for cancellation</li>
+      <li>Claims processed as per IRDAI guidelines</li>
+    </ul>
+  </div>
+
+    <h2>Insurance Application Form</h2>
+    <form>
+      <label for="fullName">Full Name</label>
+      <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required />
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required />
+
+      <label for="insuranceType">Insurance Type</label>
+      <select id="insuranceType" name="insuranceType" required>
+        <option value="">Select insurance type</option>
+        <option value="life">Life Insurance</option>
+        <option value="health">Health Insurance</option>
+        <option value="motor">Motor Insurance</option>
+        <option value="home">Home Insurance</option>
+        <option value="travel">Travel Insurance</option>
+      </select>
+
+      <label for="sumAssured">Sum Assured (₹)</label>
+      <input type="number" id="sumAssured" name="sumAssured" placeholder="Enter sum assured" required />
+
+      <button type="submit">Submit Application</button>
+    </form>
+  </div>
+
+</body>
+</html>

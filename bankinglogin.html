@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bank Login</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f4f8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 80vh;
+      margin: 0;
+    }
+    .login-box {
+      background: #fff;
+      padding: 20px 40px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 370px;
+      height: 300px;
+    } 
+
+    .login-box h2 {
+      text-align: center;
+      color: #003366;
+    }
+
+    .login-box input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+
+    .login-box button {
+      width: 100%;
+      padding: 10px;
+      background: #003366;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .login-box button:hover {
+      background: #0055a5;
+    }
+
+    .login-box .links {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .login-box .links a {
+      display: block;
+      margin: 5px 0;
+      color: #003366;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .login-box .links a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<div class="login-box">
+  <h2>Bank Login</h2>
+  <form id="loginForm">
+    <input type="text" id="username" placeholder="Username" required />
+    <input type="password" id="password" placeholder="Password" required />
+    <button type="submit">Login</button>
+  </form>
+  
+  <div class="links">
+    <a href="#" onclick="alert('Password reset link sent to your registered email!')">Forgot Password?</a>
+    <a href="#" onclick="alert('Redirecting to registration form...')">New to Login ?</a>
+  </div>
+</div>
+
+<script>
+  document.getElementById('loginForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const username = document.getElementById('username').value.trim();
+    const password = document.getElementById('password').value;
+    
+    if (username === "user123" && password === "pass123") {
+      alert("Login successful! Welcome, " + username);
+    } else {
+      alert("Invalid username or password. Please try again.");
+    }
+
+    this.reset();
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Personal Banking Login</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f4f8;
+      margin: 0;
+      padding: 0;
+     
+    }
+
+     header {
+      background-color: #004080;
+      color: white;
+      padding: 7px;
+      text-align: center;
+    }
+
+     .left-controls  {
+   
+      align-items: center;
+      gap: 10px;
+    }
+
+    .left-controls a {
+      color: whitesmoke;
+  text-decoration: none;
+  font-size: 34px;
+      display: flex;
+   justify-content: left;
+    }
+
+
+    .login-container {
+      background: white;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      max-width: 600px;
+      width: 100%;
+      margin: 2rem;
+     
+    }
+   
+    p {
+      text-align: center;
+      color: #555;
+      margin-bottom: 1rem;
+    }
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 0.5rem;
+    }
+    input {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.2rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-bottom: 1rem;
+    }
+    button {
+      width: 100%;
+      padding: 0.7rem;
+      background-color: #004080;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #003366;
+    }
+    .links {
+      text-align: center;
+      margin-top: 1rem;
+    }
+    .links a {
+      color: #004080;
+      text-decoration: none;
+      margin: 0 0.5rem;
+    }
+    .links a:hover {
+      text-decoration: underline;
+    }
+    .section-image {
+      width: 100%;
+      height: auto;
+      margin-bottom: 1rem;
+      border-radius: 6px;
+    }
+    .info {
+      background: #e8f1fb;
+      padding: 1rem;
+      border-radius: 6px;
+      margin-top: 1rem;
+    }
+    .info h2 {
+      font-size: 1.1rem;
+      color: #004080;
+      margin-bottom: 0.5rem;
+    }
+    .info ul {
+      padding-left: 1.2rem;
+      margin: 0;
+    }
+    .info li {
+      margin-bottom: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+
+     <header>
+      <div class="left-controls">
+      <a href="bank.html" class="back-button">←</a>
+        <h1>Personal Banking Login</h1>
+      </div>
+    </header>
+
+  <div class="login-container">
+    <img src="online.jpeg" alt="Personal Banking" class="section-image" />
+    
+    <p>Welcome to secure online banking. Manage your finances easily and safely from anywhere, anytime.</p>
+
+ 
+
+    <div class="info">
+      <h2>Why Choose Our Personal Banking?</h2>
+      <ul>
+        <li>24x7 access to your savings, current, and deposit accounts</li>
+        <li>Instant fund transfers through NEFT, RTGS, and IMPS</li>
+        <li>Bill payments, tax payments, and mobile/DTH recharges</li>
+        <li>Apply for loans, credit cards, and insurance online</li>
+        <li>Download account statements and transaction history</li>
+        <li>Manage standing instructions and auto-debits easily</li>
+      </ul>
+    </div>
+
+    <div class="info">
+      <h2>Security Tips for Safe Banking</h2>
+      <ul>
+        <li>Do not share your User ID, password, or OTP with anyone</li>
+        <li>Always logout from your account after use</li>
+        <li>Avoid using public computers for online banking</li>
+        <li>Regularly update your password and keep it strong</li>
+        <li>Ensure your device has updated antivirus protection</li>
+      </ul>
+    </div>
+
+    <div class="info">
+      <h2>Additional Services</h2>
+      <ul>
+        <li>Secure two-factor authentication (OTP on mobile)</li>
+        <li>Set alerts for balance updates, transactions, and bill due dates</li>
+        <li>View and redeem reward points from linked cards</li>
+        <li>Open new deposits or investments online</li>
+      </ul>
+    </div>
+
+    <div class="info">
+      <h2>Need Help?</h2>
+      <ul>
+        <li>Call our 24x7 helpline: 1800-123-4567</li>
+        <li>Email: support@yourbank.com</li>
+        <li>Visit nearest branch for personal assistance</li>
+      </ul>
+    </div>
+
+    <form>
+      <label for="userId">User ID</label>
+      <input type="text" id="userId" name="userId" placeholder="Enter your User ID" required />
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password" required />
+
+      <button type="submit">Login</button>
+    </form>
+  
+       
+
+    <div class="links">
+      <a href="#">Forgot Password?</a> | 
+      <a href="#">New User? Register</a>
+    </div>
+  </div>
+
+</body>
+</html>

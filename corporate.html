@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Corporate Banking Login</title>
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+      background: #f0f4f8;
+      margin: 0;
+     
+    }
+
+     header {
+      background-color: #004080;
+      color: white;
+      padding: 1px;
+      text-align: center;
+ }   
+
+     .left-controls  {
+   
+      align-items: center;
+      gap: 10px;
+    }
+
+    .left-controls a {
+      color: whitesmoke;
+  text-decoration: none;
+  font-size: 34px;
+      display: flex;
+   justify-content: left;
+    }
+
+    .login-container {
+      background: white;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      max-width: 600px;
+     
+    }
+    h1 {
+      color: #7f8892;
+  
+      
+    }
+    p {
+      text-align: center;
+      color: #555;
+      margin-bottom: 1rem;
+    }
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 0.5rem;
+    }
+    input {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.2rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-bottom: 1rem;
+    }
+    button {
+      width: 100%;
+      padding: 0.7rem;
+      background-color: #004080;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #003366;
+    }
+    .links {
+      text-align: center;
+      margin-top: 1rem;
+    }
+    .links a {
+      color: #004080;
+      text-decoration: none;
+      margin: 0 0.5rem;
+    }
+    .links a:hover {
+      text-decoration: underline;
+    }
+    .section-image {
+      width: 100%;
+      height: auto;
+      margin-bottom: 1rem;
+      border-radius: 6px;
+    }
+
+    .info {
+      background: #e8f1fb;
+      padding: 1rem;
+      border-radius: 6px;
+      margin-top: 1rem;
+    }
+
+    .info h2 {
+      font-size: 1.1rem;
+      color: #004080;
+      margin-bottom: 0.5rem;
+    }
+
+    .info ul {
+      padding-left: 1.2rem;
+      margin: 0;
+    }
+
+    .info li {
+      margin-bottom: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+      <div class="left-controls">
+      <a href="bank.html" class="back-button">←</a>
+        <h1>Corporate Banking Login</h1>
+      </div>
+    </header>
+  <div class="login-container">
+    <img src="corporate.jpeg" alt="Corporate Banking" class="section-image" />
+    
+    <p>Welcome to secure corporate banking. Manage your business accounts and transactions with confidence.</p>
+
+  
+
+    <div class="info">
+      <h2>Corporate Banking Features</h2>
+      <ul>
+        <li>Manage multiple business accounts in one place</li>
+        <li>Bulk payments, salary disbursements, vendor payments</li>
+        <li>Customizable user roles and access levels</li>
+        <li>Trade finance, cash management, and forex services</li>
+        <li>Download detailed transaction reports and statements</li>
+      </ul>
+    </div>
+
+    <div class="info">
+      <h2>Security Tips for Corporate Users</h2>
+      <ul>
+        <li>Use strong passwords and change them regularly</li>
+        <li>Enable two-factor authentication for all users</li>
+        <li>Review user access rights periodically</li>
+        <li>Ensure your systems are protected with updated security software</li>
+        <li>Always logout from the portal after use</li>
+      </ul>
+    </div>
+
+    <div class="info">
+      <h2>Additional Corporate Services</h2>
+      <ul>
+        <li>Online tax and statutory payments</li>
+        <li>Cash pick-up and delivery solutions</li>
+        <li>API banking for seamless business integration</li>
+        <li>Instant fund transfers with real-time tracking</li>
+      </ul>
+    </div>
+
+    <div class="info">
+      <h2>Need Assistance?</h2>
+      <ul>
+        <li>Call our corporate helpline: 1800-987-6543</li>
+        <li>Email: corporate.support@yourbank.com</li>
+        <li>Dedicated relationship manager for premium clients</li>
+      </ul>
+    </div>
+
+     <form>
+      <label for="corporateId">Corporate ID</label>
+      <input type="text" id="corporateId" name="corporateId" placeholder="Enter your Corporate ID" required />
+
+      <label for="userId">User ID</label>
+      <input type="text" id="userId" name="userId" placeholder="Enter your User ID" required />
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password" required />
+
+      <button type="submit">Login</button>
+    </form>
+
+    <div class="links">
+      <a href="#">Forgot Password?</a> | 
+      <a href="#">New Corporate? Register</a>
+    </div>
+
+  </div>
+
+</body>
+</html>

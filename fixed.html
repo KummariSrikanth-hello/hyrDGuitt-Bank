@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fixed Deposit</title>
+<link rel="stylesheet" href="prodstyle.css">
+</head>
+<body>
+
+  <header>
+     <div class="left-controls">
+      <a href="bank.html" class="back-button">←</a>
+       <h1>Open a Fixed Deposit</h1>
+      </div>
+    
+  </header>
+
+  <div class="container">
+   
+    <div class="info">
+    <h2>About Our Fixed Deposit</h2>
+    <p>
+      Our Fixed Deposit (FD) offers a secure and guaranteed return on your savings. Choose flexible tenures, earn attractive 
+      interest rates, and enjoy peace of mind with safe investments. Whether for short-term or long-term goals, our FD helps
+      you grow your wealth steadily.
+    </p>
+    </div>
+
+    <div class="info">
+    <h2>Features of Our Fixed Deposit</h2>
+    <ul>
+      <li>Attractive and assured interest rates</li>
+      <li>Flexible tenure from 7 days to 10 years</li>
+      <li>Minimum deposit starting at ₹1,000</li>
+      <li>Loan/overdraft facility against FD up to 90% of the deposit</li>
+      <li>Automatic renewal facility available</li>
+      <li>Interest payout options: monthly, quarterly, or at maturity</li>
+    </ul>
+</div>
+
+    <div class="info">
+    <h2>Advantages of Our Fixed Deposit</h2>
+    <ul>
+      <li>Guaranteed returns with zero risk</li>
+      <li>Higher interest rates for senior citizens</li>
+      <li>Helps plan for future financial goals</li>
+      <li>Tax-saving FD options under section 80C</li>
+      <li>Premature withdrawal facility (with applicable charges)</li>
+    </ul>
+    </div>
+
+<div class="info">
+    <h2>Documents Required</h2>
+    <ul>
+      <li>PAN Card / Form 60</li>
+      <li>Aadhaar Card or any valid ID proof</li>
+      <li>Address proof (utility bill, passport, etc.)</li>
+      <li>Passport size photograph</li>
+    </ul>
+    </div>
+
+<div class="info">
+    <h2>Terms & Conditions (Highlights)</h2>
+    <ul>
+      <li>Interest rates vary based on tenure and amount</li>
+      <li>Premature closure penalty may apply</li>
+      <li>TDS applicable as per income tax rules</li>
+    </ul>
+</div>
+
+    <h2>Fixed Deposit Application Form</h2>
+    <form>
+      <label for="fullName">Full Name</label>
+      <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required />
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required />
+
+      <label for="amount">Deposit Amount (₹)</label>
+      <input type="number" id="amount" name="amount" placeholder="Enter deposit amount" required />
+
+      <label for="tenure">Tenure</label>
+      <select id="tenure" name="tenure" required>
+        <option value="">Select tenure</option>
+        <option value="7_days">7 days</option>
+        <option value="1_month">1 month</option>
+        <option value="6_months">6 months</option>
+        <option value="1_year">1 year</option>
+        <option value="3_years">3 years</option>
+        <option value="5_years">5 years</option>
+        <option value="10_years">10 years</option>
+      </select>
+
+      <label for="interestPayout">Interest Payout Option</label>
+      <select id="interestPayout" name="interestPayout" required>
+        <option value="">Select payout option</option>
+        <option value="monthly">Monthly</option>
+        <option value="quarterly">Quarterly</option>
+        <option value="maturity">On Maturity</option>
+      </select>
+
+      <button type="submit">Submit Application</button>
+    </form>
+  </div>
+
+</body>
+</html>

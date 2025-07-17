@@ -1,0 +1,230 @@
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+
+    body {
+      background: #f5f7fa;
+      color: #333;
+    }
+
+    header {
+      background: #002d62;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2.5rem;
+    }
+
+    header .logo {
+      font-size: 2.8rem;
+      font-weight: bold;
+    }
+
+    header nav a {
+      color: white;
+      margin-left: 1rem;
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+
+    .hero {
+      background: #e6f0ff;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero p {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    #slideshow {
+      width:  680px;
+      height: 450px;
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,);
+      margin: 30px;
+      left: 27%;
+      
+    }
+
+    .slide {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      display: none;
+       transition: opacity 1s ease-in-out;
+    }
+
+    .slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+      opacity: 0.6;
+    }
+
+    .slide h1 {
+      position: absolute;
+      top: 10%;
+      left: 0%;
+            color: black;
+      font-size: 38px;
+      background-color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+    
+    }
+
+    .slide.active {
+      display: block;
+    }
+
+ 
+
+    .pagination {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .dot {
+      height: 15px;
+      width: 15px;
+      margin: 0 5px;
+      display: inline-block;
+      background-color: #bbb;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .dot.active {
+      background-color: #002d62;
+    }
+
+    .sections {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: left;
+      background: rgb(201, 201, 200);
+      padding: 2rem;
+    }
+
+    .section, .section1, .section2 {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: left;
+    }
+
+    .section h1, .section1 h1, .section2 h1 {
+      width: 100%;
+      color: #002d62;
+      font-size: 28px;
+      font-weight: bolder;
+      text-align: left;
+      margin-left: 5px;
+      padding-top: 5px;
+    }
+
+    .section a, .section1 a, .section2 a {
+      position: relative;
+      text-decoration: none;
+      border: 2px solid grey;
+      padding: 1px;
+      width: 313px;
+      height: 203px;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .section img, .section1 img, .section2 img {
+      width: 310px;
+      height: 200px;
+      opacity: 0.75;
+    }
+
+    .section img:hover, .section1 img:hover, .section2 img:hover {
+      opacity: 1;
+      transform: scale(1.15);
+      transition: all 0.3s ease;
+    }
+
+    .section a:hover, .section1 a:hover, .section2 a:hover {
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      transform: scale(1.05);
+      transition: all 0.3s ease;
+    }
+
+    .acc-type {
+      position: absolute;
+      bottom: 8px;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      color: orange;
+      font-weight: bold;
+      background-color: rgba(255,255,255,0.7);
+      padding: 2px 5px;
+      border-radius: 4px;
+    }
+
+    footer {
+      background: #002d62;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    .section3 {
+      max-width: 600px;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    .section3 h2 {
+      color: whitesmoke;
+      padding: 3px;
+    }
+
+    footer ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    footer li {
+      margin: 8px 0;
+    }
+
+    @media (max-width: 768px) {
+      #slideshow {
+        width: 95%;
+        height: auto;
+      }
+
+      .slide h1 {
+        font-size: 24px;
+        top: 10%;
+      }
+
+      .section a, .section1 a, .section2 a {
+        width: 100%;
+        height: auto;
+      }
+
+      .section img, .section1 img, .section2 img {
+        width: 100%;
+        height: auto;
+      }
+    }
